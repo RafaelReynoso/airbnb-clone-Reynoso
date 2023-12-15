@@ -11,7 +11,7 @@ class AirbnbViewModel: ObservableObject {
     @Published var airbnbData: [Place] = []
 
     func loadAirbnbData() async {
-        guard let url = URL(string: "https://api-airbnb-basic.onrender.com/airbnb") else {
+        guard let url = URL(string: "https://airbnb-api-b-zeta.vercel.app/airbnb") else {
             print("Invalid URL")
             return
         }
